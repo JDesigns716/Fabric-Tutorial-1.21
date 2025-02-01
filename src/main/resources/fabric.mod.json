@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "tutorialmod",
+	"version": "${version}",
+	"name": "Tutorial Mod",
+	"description": "Tutorial Mod by JDesigns",
+	"authors": [
+		"JDesigns"
+	],
+	"contact": {
+		"homepage": "https://github.com/JDesigns716",
+		"sources": "https://github.com/JDesigns716/Fabric-Tutorial-1.21"
+	},
+	"license": "MIT",
+	"icon": "assets/tutorialmod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.jdesigns.tutorialmod.TutorialMod"
+		],
+		"fabric-datagen": [
+			"net.jdesigns.tutorialmod.TutorialModDataGenerator"
+		],
+		"client": [
+			"net.jdesigns.tutorialmod.TutorialModClient"
+		]
+	},
+	"mixins": [
+		"tutorialmod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
